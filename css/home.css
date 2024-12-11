@@ -1,0 +1,768 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*___________________ Mi codigo ________________________________________*/
+
+ 
+body {
+    background-image: url('../img/imgFondo8.jpg');
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 3s ease-in all;     
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+    
+nav a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;   
+    padding: 5px 8px;
+    font-size: large;
+    background-color: #929495;
+    margin-left: 30px;
+    text-align: center;  
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    
+    gap:20px;
+
+}
+
+#icono {
+    display: none;
+}
+
+#contenedorIzquierdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;    
+    gap: 40px;
+    width: 50%; 
+    margin-left: 30px;      
+}
+
+#contenedorDerecho {
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    margin-top: 40px;
+    gap: 40px;  
+    width: 50%; 
+    margin-right: 30px;  
+}
+
+/*Estilos para generador de contraseñas*/
+
+#contenedorContraseña {
+    background-color: rgba(248, 252, 252, 0.3);
+    color: whitesmoke;
+    width: 550px;
+    height: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}   
+
+#titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#explicacion {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    padding-bottom: 0px;
+}
+
+#longitudContraseña {
+    padding: 10px;
+    text-align: center;
+    border: rgb(169, 58, 58) linear 2px;
+    background-color: aliceblue;
+    color: rgb(53, 53, 53);
+    border-radius: 10px;
+}
+
+#generarBtn {
+    box-shadow: 3px 3px 2px 0px #e8ebec7a;
+    background: linear-gradient(rgb(130, 130, 130), rgb(178, 178, 178));
+    background-color: #929495;
+    border-radius: 15px;
+    border: 2px solid #d9d1d9;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    animation: customAni 3s ease 0s 1 alternate backwards;
+}
+
+@keyframes customAni {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(-60px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(-40px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(-20px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(-10px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+
+#generarBtn:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: #969696 0px 0px 5px, #9c9696 0px 0px 10px, #909090 0px 0px 15px, #a7a7a7 0px 0px 20px, #7e7979 0px 0px 50px, #929292 0px 0px 75px;
+    color: #FFFFFF;
+    background: #727272;
+}
+
+#contraseña {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(78, 78, 78);
+    height: 40px;
+    width: 500px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+/*Estilos para el tiempo en granada*/
+
+#contenedorWheather {
+    background-color:rgba(248, 252, 252, 0.3);
+    color: whitesmoke;
+    width: 550px;
+    height: 390px;   
+    border-radius: 30px;
+    margin-bottom: 50px;    
+}
+
+.ciudad {
+    padding-left: 40px;
+    padding-top: 35px;
+    font-size: 25px;    
+}
+
+.ciudad p {
+    margin-top: 7px;
+}
+
+.datos {   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;      
+}
+
+.imagenTemperatura {  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.imagenTemperatura img{
+    width: 100px;
+    padding-top: 10px;
+}
+
+.imagenTemperatura p {
+    font-size: 25px;    
+}
+
+.precHumVi {
+    font-size: 18px;   
+}
+
+.precHumVi p {
+    padding-top: 4px;   
+}
+
+#datosHoras {
+    display: flex;
+    gap:5px;
+   
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow-x: scroll;  
+}
+
+#datosHoras li {
+    padding: 5px;
+    list-style: none;
+    font-size: large;   
+    height: max-content;
+}
+
+#datosHoras li p {
+    text-align: center;
+}
+
+
+/*Estilos para Reloj*/
+
+#clockContainer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(248, 252, 252, 0.3);
+    color: rgb(255, 255, 255);
+    width: 550px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.hora {
+    padding-top: 17px;
+    font-size: 70px;
+}
+
+.fecha {  
+    font-size: 40px;
+}
+
+.mensaje {
+     color:white;
+    font-size: 20px;
+    text-align: center;   
+}
+
+/*Estilos para Guardar Link*/
+
+#linkContainer {
+    background-color: rgba(248, 252, 252, 0.3);
+    color: whitesmoke;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+#tituloLink {
+    font-size: 35px;
+    padding-top: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 20px;
+    gap: 17px;    
+}
+
+#nombre, #url {
+    padding: 5px 10px;
+    text-align: center;
+    border: rgb(72, 72, 72) linear 2px;
+    background-color: aliceblue;
+    color: rgb(53, 53, 53);
+    border-radius: 10px;
+    width: 400px;    
+}
+
+#guardarBtn {
+    box-shadow: 3px 3px 2px 0px #e8ebec7a;
+    background: linear-gradient(rgb(130, 130, 130), rgb(178, 178, 178));
+    background-color: #929495;
+    border-radius: 15px;
+    border: 2px solid #d9d1d9;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 25px;
+    margin-top:10px;
+    width: 150px;
+    animation: customAni2 3s ease 0s 1 normal backwards;
+}
+
+@keyframes customAni2 {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(60px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(40px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(20px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(10px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(4spx);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+#guardarBtn:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: #969696 0px 0px 5px, #9c9696 0px 0px 10px, #909090 0px 0px 15px, #a7a7a7 0px 0px 20px, #7e7979 0px 0px 50px, #929292 0px 0px 75px;
+    color: #FFFFFF;
+    background: #727272;
+    
+}
+#contenedorGuardado {
+    margin: 40px;
+    overflow-y: scroll;
+}
+
+#ulContenedorGuardado{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#ulContenedorGuardado li{
+    text-decoration: none;
+    list-style: none;
+    
+    padding: 6px 20px;
+    
+    background-color: #0000006f;
+    border-radius: 15px;
+    border: 2px solid #d9d8dd;
+    margin-top:15px
+    
+}
+
+#ulContenedorGuardado li a{
+
+     color: #ffffff;
+     text-decoration:none ;
+     font-weight:100 ;
+     padding-right: 10px;
+
+    }
+    
+    .eliminarBtn {
+        border-radius: 40px;
+        border-color:#dddce0;
+        background-color: #929495;
+        color:#f2f1f4;
+    }
+
+/*elementos para hacer mi pagina responsive*/ 
+
+@media (max-width: 1175px) {
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap:0px;   
+}
+
+#palabra {
+    display: none;
+}
+
+#icono {
+    display: block;
+    display: flex;
+}
+
+#contenedorIzquierdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; 
+    margin-left: 0px;  
+    width: 100%;         
+}
+
+#contenedorDerecho {
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 40px;    
+    width: 100%; 
+}
+
+body {    
+    background-repeat:repeat-y;    
+}
+}
+
+/*_________________________________________________________*/
+
+@media (max-width: 560px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap:0px;       
+    }
+    
+    #palabra {
+        display: none;
+    }
+    
+    #icono {
+        display: block;
+        display: flex;   
+    }
+    
+    body {        
+        background-repeat:repeat-y;        
+    }
+
+    /*____________________________________________*/
+
+    #linkContainer {        
+        width: 360px;               
+    }
+
+    #nombre, #url {
+        font-size: 17px;
+        width: 300px;
+    }
+
+    .form {
+        padding-top: 20px;
+    }
+
+
+    #tituloLink {
+       font-size: 26px;
+       padding-top: 28px;
+       
+       
+    }
+    .label{
+        font-size: 20px;
+        padding-top: 0px;
+    }
+
+    /*___________________________________________________*/
+
+    #clockContainer {        
+        width: 360px;       
+    }
+    
+    .hora {       
+        font-size: 50px;
+    }
+    
+    .fecha {  
+        font-size: 30px;
+    }
+    
+    .mensaje {       
+        font-size: 15px;          
+    }
+
+    /*_____________________________________________*/
+
+    #contenedorWheather {        
+        width: 360px;
+        height: 480px;            
+    }    
+    
+    .datos {   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 360px;      
+    }
+    
+    .imagenTemperatura {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin-top: 0px;
+    }
+    
+    .imagenTemperatura img{
+        width: 100px;
+        padding-top: 0px;
+    }
+    
+    .imagenTemperatura p {
+        font-size: 25px;    
+    }
+    
+    .precHumVi {
+        font-size: 18px;   
+    }
+    
+    .precHumVi p {
+        padding-top: 3px;   
+    }
+    
+    #datosHoras {        
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;         
+    }        
+    
+    #datosHoras li p {
+        padding-bottom: 8px;
+    }
+
+    /*----------------------------------------------------------*/
+
+    #contenedorContraseña {        
+        width: 360px;
+        height: 360px;        
+    }   
+    
+    #titulo {        
+        font-size: 27px;        
+        padding-top: 20px;
+    }
+    
+    #explicacion {        
+        font-size: 17px;        
+    }    
+    
+    #contraseña {        
+        font-size: 16px;
+        text-align: left;        
+        height: 25px;
+        width: 300px;
+        padding-left: 20px;
+        padding-top: 10px;        
+    }    
+    
+    }
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Mi Dashboard</title>
+    </head>
+
+<body>
+    <nav id="palabra">
+        <a class='navContraseña' href="password.html">Generador Contraseña</a>
+        <a class='navweather' href="weather.html">El tiempo en Granada</a>
+        <a class='navRelog' href="clock.html">Reloj</a>
+        <a class='navlink' href="link.html">Guardar Link</a>
+    </nav>
+    <nav id="icono">
+        <a class='navContraseña' href="password.html"><span class="material-symbols-outlined">password</span></a>
+        <a class='navweather' href="weather.html"><span class="material-symbols-outlined">sunny</span></a>
+        <a class='navRelog' href="clock.html"><span class="material-symbols-outlined">schedule</span></a>
+        <a class='navlink' href="link.html"><span class="material-symbols-outlined">link</span></a>
+    </nav>
+    <main>
+        
+        
+        <div id="contenedorIzquierdo">
+            
+            <div id="contenedorContraseña">
+                <p id="titulo">Crea tu contraseña segura</p>
+                <p id="explicacion">Número de cracteres de la contraseña</p>
+                <input type="number" placeholder="12" id="longitudContraseña" min="12" max="50">
+                <button id="generarBtn">Generar</button>
+                <p id="contraseña"></p>
+            </div>
+            
+            <div id="contenedorWheather">
+                <div id="datosCiudad">
+                </div>
+                <div id=contenedorHoras>
+                    <ul id="datosHoras">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="contenedorDerecho">
+            
+            <div id="clockContainer">            
+            </div>
+            
+            <div id="linkContainer">
+                <p id="tituloLink">Añade tu enlace para Guardar</p>
+                <div class="form">
+                    <p class="label"><label for="nombre">Nombre</label></p>
+                    <p><input type="text" placeholder="Nombre del enlace" name="nombre" id="nombre"></p>
+                    <p class="label"><label for="url">Url</label></p>
+                    <p><input type="text" placeholder="Pega aqui tu Url" name="url" id="url"></p>
+                    <button id="guardarBtn">Guardar</button>
+                </div>
+                <div id="contenedorGuardado">
+                    <ul id="ulContenedorGuardado">
+
+                    </ul>
+                </div>
+            </div>            
+        </div>
+
+    </main>
+
+    <script src="js/background.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/link.js"></script>
+</body>
+
+</html>
