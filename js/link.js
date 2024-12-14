@@ -35,6 +35,8 @@ function cargarEnPantalla() {
     });
 }
 
+//Elimino los datos del localstorage y de pantalla
+
 function eliminarLink(event) {
     const index = event.target.dataset.index; 
     let mislink = localStorage.getItem('mislink');
@@ -52,6 +54,7 @@ function eliminarLink(event) {
     cargarEnPantalla();                      // Vuelve a cargar la lista
 }
 
+//Capturo los datos del input y los introduzco al localstorage
 
 guardarBtn.addEventListener('click', () => {
 
