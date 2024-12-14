@@ -163,10 +163,8 @@ nav a {
 }
 
 main {
-    display: flex;
-    
+    display: flex;    
     gap:20px;
-
 }
 
 #icono {
@@ -293,15 +291,12 @@ main {
       transform: translateX(0px);
     }
   }
-
-
+  
 
 #generarBtn:hover {
     transform: scale(1.1);
     color: #FFFFFF;
-    background: #333333;
     text-shadow: #969696 0px 0px 5px, #9c9696 0px 0px 10px, #909090 0px 0px 15px, #a7a7a7 0px 0px 20px, #7e7979 0px 0px 50px, #929292 0px 0px 75px;
-    color: #FFFFFF;
     background: #727272;
 }
 
@@ -374,8 +369,7 @@ main {
 
 #datosHoras {
     display: flex;
-    gap:5px;
-   
+    gap:5px;   
     margin-left: 40px;
     margin-right: 40px;
     overflow-x: scroll;  
@@ -466,7 +460,6 @@ main {
 #guardarBtn {
     box-shadow: 3px 3px 2px 0px #e8ebec7a;
     background: linear-gradient(rgb(130, 130, 130), rgb(178, 178, 178));
-    background-color: #929495;
     border-radius: 15px;
     border: 2px solid #d9d1d9;
     cursor: pointer;
@@ -529,9 +522,7 @@ main {
 #guardarBtn:hover {
     transform: scale(1.1);
     color: #FFFFFF;
-    background: #333333;
     text-shadow: #969696 0px 0px 5px, #9c9696 0px 0px 10px, #909090 0px 0px 15px, #a7a7a7 0px 0px 20px, #7e7979 0px 0px 50px, #929292 0px 0px 75px;
-    color: #FFFFFF;
     background: #727272;
     
 }
@@ -549,29 +540,24 @@ main {
 
 #ulContenedorGuardado li{
     text-decoration: none;
-    list-style: none;
-    
-    padding: 6px 20px;
-    
+    list-style: none;    
+    padding: 6px 20px;    
     background-color: #0000006f;
     border-radius: 15px;
     border: 2px solid #d9d8dd;
-    margin-top:15px
-    
+    margin-top:15px    
 }
 
 #ulContenedorGuardado li a{
-
      color: #ffffff;
      text-decoration:none ;
-     font-weight:100 ;
+     font-weight:100;
      padding-right: 10px;
-
     }
     
     .eliminarBtn {
         border-radius: 40px;
-        border-color:#dddce0;
+        border:1px solid #d9d8dd;
         background-color: #929495;
         color:#f2f1f4;
     }

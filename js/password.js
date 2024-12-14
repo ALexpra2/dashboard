@@ -21,39 +21,39 @@ const simbolo = s.split('');
 /* console.log(mayuscula);
 console.log(minuscula);
 console.log(numero);
-console.log(simbolo); */
-
+console.log(simbolo);
+ */
 
 //Funcion para generar la contraseña
 
 function obtenercontraseña() {
 
     const longitud = parseInt(document.getElementById('longitudContraseña').value);
-    console.log(longitud);
+    //console.log(longitud);
 
 
     if ((longitud >= 12) && (longitud <= 50)) {
 
-        //Crear aleatoriedad entre las diferentes elemntos de la contraseña y dentro de ellos
+        //Crear aleatoriedad entre los diferentes elementos de la contraseña y dentro de los arrays
         const arrcontraseña = [];
         for (let i = 0; i < longitud; i++) {
             const tipoAleatorio = Math.floor((Math.random() * 4) + 1);
             //console.log(tipoAleatorio);
             if (tipoAleatorio == 1) {
-                const caracterAleatorio = Math.floor(Math.random() * 27);
-                arrcontraseña.push(mayuscula[caracterAleatorio]);
+                const caracterAleatorio = Math.floor(Math.random() *(26 - 1 + 1));
+                arrcontraseña.push(mayuscula[caracterAleatorio]);                
             }
             else if (tipoAleatorio == 2) {
-                const caracterAleatorio = Math.floor(Math.random() * 27);
-                arrcontraseña.push(minuscula[caracterAleatorio]);
+                const caracterAleatorio = Math.floor(Math.random() * (26 - 1 + 1));
+                arrcontraseña.push(minuscula[caracterAleatorio]);                
             }
             else if (tipoAleatorio == 3) {
-                const caracterAleatorio = Math.floor(Math.random() * 11);
-                arrcontraseña.push(numero[caracterAleatorio]);
+                const caracterAleatorio = Math.floor(Math.random() * (9-1+1));
+                arrcontraseña.push(numero[caracterAleatorio]);                
             }
             else {
-                const caracterAleatorio = Math.floor(Math.random() * 15);
-                arrcontraseña.push(simbolo[caracterAleatorio]);
+                const caracterAleatorio = Math.floor(Math.random() * (14-1+1));
+                arrcontraseña.push(simbolo[caracterAleatorio]);                
             }
         }
 
@@ -62,6 +62,7 @@ function obtenercontraseña() {
         const textoContraseña = document.getElementById('contraseña');
         textoContraseña.textContent = contraseña
 
+        console.log(contraseña.length);
         console.log(contraseña);
     }
 

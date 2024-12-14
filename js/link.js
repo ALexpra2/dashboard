@@ -22,8 +22,8 @@ function cargarEnPantalla() {
     mislink.forEach((link,i) => {
         const li = document.createElement('li');
         li.innerHTML = `
-        <a href="${link.url}" target="_blank">${link.nombre}</a>
-        <button class="eliminarBtn" data-index="${i}">X</button>
+        <a href='${link.url}' target='_blank'>${link.nombre}</a>
+        <button class='eliminarBtn' data-index='${i}'>X</button>
         `;
         contenedor.appendChild(li);
 
